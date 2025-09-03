@@ -24,7 +24,41 @@ input[type="submit"] {
     background-color: #f5f0ecff;
     border-radius: 50%;
     height: 128px;
+    position: relative;
     margin: auto;
+}
+
+.ear {
+    background-color: #696868;
+    border-radius: 20%;
+    height: 48px;
+    position: absolute;
+    transform: skew(20deg);
+    width: 48px;
+}
+
+.ear::after {
+    background-color: #f7a1f7;
+    border-radius: 20%;
+    content: "";
+    height: 36px;
+    left: 4px;
+    opacity: 0.7;
+    position: absolute;
+    top: 6px;
+    width: 36px;
+}
+
+.ear::before {
+    background: #faf8f8;
+    content: "";
+    filter: blur(2px);
+    height: 36px;
+    left: 4px;
+    opacity: 0.4;
+    position: absolute;
+    top: 6px;
+    width: 36px;
 }
 
 .eye {
@@ -65,7 +99,9 @@ input[type="submit"] {
     height: 80px;
     margin: auto;
     position: relative;
+    top: 12px;
     width: 96px;
+    z-index: 10;
 }
 
 .form-row {
@@ -85,8 +121,20 @@ input[type="submit"] {
     padding: 1rem;
 }
 
+.left-ear {
+    left: 16px;
+    rotate: 15deg;
+    top: 12px;
+}
+
 .left-eye {
     left: 12px;
+}
+
+.right-ear {
+    right: 16px;
+    rotate: 75deg;
+    top: 8px;
 }
 
 .right-eye {
