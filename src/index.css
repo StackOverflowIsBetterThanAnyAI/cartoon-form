@@ -19,11 +19,34 @@ input[type="submit"] {
     padding: 0.25rem;
 }
 
+.body {
+    background-color: #807c7c;
+    border-radius: 50% 50% 40% 40%;
+    height: 64px;
+    left: 50%;
+    position: absolute;
+    translate: -50%;
+    width: 64px;
+}
+
+.body::before {
+    content: "";
+    background-color: #696868;
+    border-radius: 50%;
+    height: 48px;
+    left: 50%;
+    position: absolute;
+    top: 12px;
+    translate: -50%;
+    width: 48px;
+}
+
 .cartoon {
     aspect-ratio: 1/1;
     background-color: #f5f0ecff;
     border-radius: 50%;
     height: 128px;
+    overflow: hidden;
     position: relative;
     margin: auto;
 }
@@ -136,9 +159,9 @@ input[type="submit"] {
 }
 
 .left-ear {
-    left: 16px;
+    left: 46px;
     rotate: 15deg;
-    top: 12px;
+    top: 36px;
     transform: skew(20deg);
 }
 
@@ -180,9 +203,9 @@ input[type="submit"] {
 }
 
 .right-ear {
-    right: 18px;
+    right: 42px;
     rotate: 95deg;
-    top: 8px;
+    top: 36px;
     transform: skew(30deg);
 }
 
