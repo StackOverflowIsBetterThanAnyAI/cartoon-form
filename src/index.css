@@ -28,6 +28,16 @@ input[type="submit"] {
     margin: auto;
 }
 
+.cheek {
+    background-color: #807c7c;
+    border-radius: 50%;
+    height: 24px;
+    position: absolute;
+    top: 36px;
+    width: 64px;
+    z-index: 5;
+}
+
 .ear {
     background-color: #696868;
     border-radius: 20%;
@@ -67,6 +77,7 @@ input[type="submit"] {
     position: absolute;
     top: 24px;
     width: 16px;
+    z-index: 10;
 }
 
 .eye::after {
@@ -120,6 +131,10 @@ input[type="submit"] {
     padding: 1rem;
 }
 
+.left-cheek {
+    left: -2px;
+}
+
 .left-ear {
     left: 16px;
     rotate: 15deg;
@@ -131,6 +146,10 @@ input[type="submit"] {
     left: 12px;
 }
 
+.right-cheek {
+    right: -2px;
+}
+
 .right-ear {
     right: 18px;
     rotate: 95deg;
@@ -140,4 +159,14 @@ input[type="submit"] {
 
 .right-eye {
     right: 12px;
+}
+.mouth-white {
+    background-color: #e4dddd;
+    border-radius: 50%;
+    height: 40px;
+    left: 50%;
+    position: absolute;
+    top: 40px;
+    translate: -50%;
+    width: 104px;
 }
