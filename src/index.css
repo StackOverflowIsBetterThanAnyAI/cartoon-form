@@ -33,7 +33,6 @@ input[type="submit"] {
     border-radius: 20%;
     height: 48px;
     position: absolute;
-    transform: skew(20deg);
     width: 48px;
 }
 
@@ -125,6 +124,7 @@ input[type="submit"] {
     left: 16px;
     rotate: 15deg;
     top: 12px;
+    transform: skew(20deg);
 }
 
 .left-eye {
@@ -132,9 +132,10 @@ input[type="submit"] {
 }
 
 .right-ear {
-    right: 16px;
-    rotate: 75deg;
+    right: 18px;
+    rotate: 95deg;
     top: 8px;
+    transform: skew(30deg);
 }
 
 .right-eye {
