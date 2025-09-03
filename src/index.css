@@ -42,13 +42,21 @@ input[type="submit"] {
 }
 
 .cartoon {
-    aspect-ratio: 1/1;
     background-color: #f5f0ecff;
     border-radius: 50%;
     height: 128px;
-    overflow: hidden;
     position: relative;
     margin: auto;
+    width: 128px;
+}
+
+.cartoon-wrapper {
+    border-radius: 0 0 50% 50%;
+    height: 128px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 128px;
 }
 
 .cheek {
@@ -159,9 +167,9 @@ input[type="submit"] {
 }
 
 .left-ear {
-    left: 46px;
+    left: 16px;
     rotate: 15deg;
-    top: 36px;
+    top: 12px;
     transform: skew(20deg);
 }
 
@@ -203,9 +211,9 @@ input[type="submit"] {
 }
 
 .right-ear {
-    right: 42px;
+    right: 18px;
     rotate: 95deg;
-    top: 36px;
+    top: 8px;
     transform: skew(30deg);
 }
 
