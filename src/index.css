@@ -22,22 +22,45 @@ input[type="submit"] {
 .cartoon {
   aspect-ratio: 1/1;
   background-color: #f5f0ecff;
-  border-radius: 100%;
+  border-radius: 50%;
   height: 128px;
   margin: auto;
 }
 
 .eye {
   background-color: #17359e;
-  border-radius: 60%;
+  border-radius: 50%;
   height: 24px;
   position: absolute;
   top: 24px;
   width: 16px;
 }
 
+.eye::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  width: 8px;
+  height: 8px;
+  background: #faf8f8;
+  border-radius: 50%;
+}
+
+.eye::before {
+  background: #faf8f8;
+  border-radius: 50%;
+  content: "";
+  filter: blur(2px);
+  height: 24px;
+  opacity: 0.25;
+  position: absolute;
+  top: 0px;
+  width: 16px;
+}
+
 .face {
-  background-color: #746e6e;
+  background-color: #807c7c;
   border-radius: 80%;
   height: 80px;
   margin: auto;
@@ -63,9 +86,9 @@ input[type="submit"] {
 }
 
 .left-eye {
-  left: 8px;
+  left: 12px;
 }
 
 .right-eye {
-  right: 8px;
+  right: 12px;
 }
