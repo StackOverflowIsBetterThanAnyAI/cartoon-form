@@ -19,6 +19,12 @@ input[type="submit"] {
     padding: 0.25rem;
 }
 
+input:not([type="submit"]) {
+    background-color: #faf6f4;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.25rem;
+}
+
 .body {
     background-color: #807c7c;
     border-radius: 50% 50% 40% 40%;
