@@ -15,8 +15,18 @@ fieldset {
 input[type="submit"] {
     background-color: #f3a444ff;
     border-radius: 0.5rem;
-    outline: 0.125rem solid #f5f0ecff;
+    margin-top: 1rem;
+    outline: 2px solid #f5f0ecff;
     padding: 0.25rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #eb9a39;
+    cursor: pointer;
+}
+
+input[type="submit"]:active {
+    background-color: #d18629;
 }
 
 input:not([type="submit"]) {
