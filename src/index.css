@@ -207,6 +207,29 @@ input:not([type="submit"]):hover {
     width: 132px;
 }
 
+.mouth-slope {
+    border: 4px solid #e4dddd;
+    border-left-color: transparent;
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    height: 40px;
+    position: absolute;
+    top: 51px;
+    width: 32px;
+    z-index: 5;
+}
+
+.mouth-slope-left {
+    left: 7px;
+    rotate: 333deg;
+}
+
+.mouth-slope-right {
+    right: 7px;
+    rotate: 27deg;
+}
+
 .mouth-white {
     background-color: #e4dddd;
     border-radius: 50%;
@@ -216,9 +239,9 @@ input:not([type="submit"]):hover {
 }
 
 .mouth-white-bottom {
-    height: 54px;
-    top: 64px;
-    width: 154px;
+    height: 64px;
+    top: 60px;
+    width: 144px;
 }
 
 .mouth-white-middle {
@@ -226,6 +249,18 @@ input:not([type="submit"]):hover {
     top: 72px;
     width: 64px;
     z-index: 5;
+}
+
+.mouth-white-middle::before {
+    background-color: #69686850;
+    border-radius: 50%;
+    content: "";
+    height: 32px;
+    left: 50%;
+    position: absolute;
+    top: 2px;
+    translate: -50%;
+    width: 56px;
 }
 
 .mouth-white-top {
