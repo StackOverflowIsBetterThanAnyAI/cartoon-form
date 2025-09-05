@@ -35,6 +35,10 @@ input:not([type="submit"]) {
     padding: 0.5rem 0.25rem;
 }
 
+input:not([type="submit"]):hover {
+    background-color: #f3edea;
+}
+
 .body {
     background-color: #807c7c;
     border-radius: 50% 50% 40% 40%;
@@ -168,6 +172,7 @@ input:not([type="submit"]) {
 .form-wrapper {
     background-color: #f8bc74;
     border-radius: 0.5rem;
+    box-shadow: 0px 0px 8px #807c7c;
     display: flex;
     flex-direction: column;
     gap: 1rem;
