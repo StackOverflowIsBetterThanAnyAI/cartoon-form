@@ -92,6 +92,7 @@ input:not([type="submit"]):hover {
     overflow: hidden;
     position: relative;
     width: 192px;
+    z-index: 0;
 }
 
 .cheek {
@@ -168,14 +169,28 @@ input:not([type="submit"]):hover {
 }
 
 .face {
+    animation: head-movement 2s linear infinite alternate;
     background-color: #807c7c;
     border-radius: 50% 50% 25% 25%;
     height: 108px;
     margin: auto;
     position: relative;
     top: 18px;
+    transform-origin: center center;
     width: 144px;
     z-index: 10;
+}
+
+.face::before {
+    content: "";
+    background-color: #807c7c;
+    border-radius: 50% 50% 25% 25%;
+    height: 108px;
+    margin: auto;
+    position: absolute;
+    transform-origin: center center;
+    width: 144px;
+    z-index: 1;
 }
 
 .form-row {
@@ -203,9 +218,9 @@ input:not([type="submit"]):hover {
 }
 
 .left-ear {
-    left: 24px;
+    left: -8px;
     rotate: 15deg;
-    top: 18px;
+    top: 0px;
     transform: skew(20deg);
 }
 
@@ -249,6 +264,7 @@ input:not([type="submit"]):hover {
     left: 50%;
     position: absolute;
     translate: -50%;
+    z-index: 1;
 }
 
 .mouth-white-bottom {
@@ -295,9 +311,9 @@ input:not([type="submit"]):hover {
 }
 
 .right-ear {
-    right: 24px;
+    right: -4px;
     rotate: 95deg;
-    top: 14px;
+    top: 2px;
     transform: skew(30deg);
 }
 
@@ -350,4 +366,16 @@ input:not([type="submit"]):hover {
 
 .snout-hair-right {
     right: 54px;
+}
+
+@keyframes head-movement {
+    0% {
+        transform: translateX(-8px) rotate(-8deg);
+    }
+    50% {
+        transform: translateX(6px) rotate(8deg);
+    }
+    100% {
+        transform: translateX(-8px) rotate(-6deg);
+    }
 }
