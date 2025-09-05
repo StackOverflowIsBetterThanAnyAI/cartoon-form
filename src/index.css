@@ -41,7 +41,7 @@ input:not([type="submit"]):hover {
 
 .body {
     background-color: #807c7c;
-    border-radius: 50% 50% 40% 40%;
+    border-radius: 100% / 125% 125% 80% 80%;
     height: 96px;
     left: 50%;
     position: absolute;
