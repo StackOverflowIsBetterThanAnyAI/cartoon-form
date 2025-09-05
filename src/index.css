@@ -42,47 +42,47 @@ input:not([type="submit"]):hover {
 .body {
     background-color: #807c7c;
     border-radius: 50% 50% 40% 40%;
-    height: 64px;
+    height: 96px;
     left: 50%;
     position: absolute;
     translate: -50%;
-    width: 64px;
+    width: 96px;
 }
 
 .body::before {
     content: "";
     background-color: #696868;
     border-radius: 50%;
-    height: 48px;
+    height: 72px;
     left: 50%;
     position: absolute;
-    top: 12px;
+    top: 18px;
     translate: -50%;
-    width: 48px;
+    width: 72px;
 }
 
 .cartoon {
     background-color: #f5f0ecff;
     border-radius: 50%;
-    height: 128px;
+    height: 192px;
     position: relative;
     margin: auto;
-    width: 128px;
+    width: 192px;
 }
 
 .cartoon-wrapper {
     border-radius: 0 0 50% 50%;
-    height: 128px;
+    height: 192px;
     margin: auto;
     overflow: hidden;
     position: relative;
-    width: 128px;
+    width: 192px;
 }
 
 .cheek {
     background-color: #807c7c;
     border-radius: 50%;
-    height: 24px;
+    height: 36px;
     position: absolute;
     z-index: 5;
 }
@@ -90,42 +90,42 @@ input:not([type="submit"]):hover {
 .ear {
     background-color: #696868;
     border-radius: 20%;
-    height: 48px;
+    height: 72px;
     position: absolute;
-    width: 48px;
+    width: 72px;
 }
 
 .ear::after {
     background-color: #f7a1f7;
     border-radius: 20%;
     content: "";
-    height: 36px;
+    height: 64px;
     left: 4px;
     opacity: 0.7;
     position: absolute;
     top: 6px;
-    width: 36px;
+    width: 64px;
 }
 
 .ear::before {
     background: #faf8f8;
     content: "";
     filter: blur(2px);
-    height: 36px;
+    height: 64px;
     left: 4px;
     opacity: 0.4;
     position: absolute;
     top: 6px;
-    width: 36px;
+    width: 64px;
 }
 
 .eye {
     background-color: #17359e;
     border-radius: 50%;
-    height: 24px;
+    height: 36px;
     position: absolute;
-    top: 24px;
-    width: 16px;
+    top: 36px;
+    width: 24px;
     z-index: 10;
 }
 
@@ -134,8 +134,8 @@ input:not([type="submit"]):hover {
     position: absolute;
     top: 6px;
     left: 5px;
-    width: 8px;
-    height: 8px;
+    width: 12px;
+    height: 12px;
     background: #faf8f8;
     border-radius: 50%;
 }
@@ -145,21 +145,21 @@ input:not([type="submit"]):hover {
     border-radius: 50%;
     content: "";
     filter: blur(2px);
-    height: 24px;
+    height: 36px;
     opacity: 0.25;
     position: absolute;
     top: 0px;
-    width: 16px;
+    width: 24px;
 }
 
 .face {
     background-color: #807c7c;
     border-radius: 50% 50% 25% 25%;
-    height: 72px;
+    height: 108px;
     margin: auto;
     position: relative;
-    top: 12px;
-    width: 96px;
+    top: 18px;
+    width: 144px;
     z-index: 10;
 }
 
@@ -183,26 +183,26 @@ input:not([type="submit"]):hover {
 
 .left-cheek {
     left: -2px;
-    top: 38px;
-    width: 64px;
+    top: 58px;
+    width: 96px;
 }
 
 .left-ear {
-    left: 16px;
+    left: 24px;
     rotate: 15deg;
-    top: 12px;
+    top: 18px;
     transform: skew(20deg);
 }
 
 .left-eye {
-    left: 12px;
+    left: 18px;
 }
 
 .middle-cheek {
     left: 50%;
-    top: 30px;
+    top: 46px;
     translate: -50%;
-    width: 88px;
+    width: 132px;
 }
 
 .mouth-white {
@@ -214,30 +214,30 @@ input:not([type="submit"]):hover {
 }
 
 .mouth-white-bottom {
-    height: 36px;
-    top: 42px;
-    width: 102px;
+    height: 54px;
+    top: 64px;
+    width: 154px;
 }
 
 .mouth-white-top {
-    height: 40px;
-    top: 34px;
-    width: 104px;
+    height: 60px;
+    top: 52px;
+    width: 156px;
 }
 
 .right-cheek {
-    top: 38px;
+    top: 58px;
     right: -2px;
-    width: 64px;
+    width: 96px;
 }
 
 .right-ear {
-    right: 18px;
+    right: 24px;
     rotate: 95deg;
-    top: 8px;
+    top: 14px;
     transform: skew(30deg);
 }
 
 .right-eye {
-    right: 12px;
+    right: 18px;
 }
