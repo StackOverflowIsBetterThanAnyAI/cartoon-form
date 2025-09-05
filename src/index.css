@@ -219,6 +219,13 @@ input:not([type="submit"]):hover {
     width: 154px;
 }
 
+.mouth-white-middle {
+    height: 40px;
+    top: 72px;
+    width: 64px;
+    z-index: 5;
+}
+
 .mouth-white-top {
     height: 60px;
     top: 52px;
@@ -240,4 +247,30 @@ input:not([type="submit"]):hover {
 
 .right-eye {
     right: 18px;
+}
+
+.snout {
+    border-left: 16px solid transparent;
+    border-radius: 50%;
+    border-right: 16px solid transparent;
+    border-top: 16px solid #4b4848;
+    left: 50%;
+    position: absolute;
+    top: 76px;
+    translate: -50%;
+    z-index: 5;
+}
+
+.snout::before {
+    background-color: #f3edea;
+    border-radius: 50%;
+    content: "";
+    filter: blur(0.5px);
+    height: 4px;
+    left: 50%;
+    opacity: 0.4;
+    position: absolute;
+    top: -14px;
+    translate: -50%;
+    width: 12px;
 }
