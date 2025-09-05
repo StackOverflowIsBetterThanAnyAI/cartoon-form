@@ -55,6 +55,7 @@ input:not([type="submit"]):hover {
     border-radius: 50%;
     height: 72px;
     left: 50%;
+    outline: 2px solid #4b484880;
     position: absolute;
     top: 18px;
     translate: -50%;
@@ -102,6 +103,7 @@ input:not([type="submit"]):hover {
     height: 64px;
     left: 4px;
     opacity: 0.7;
+    outline: 2px solid #4b48489a;
     position: absolute;
     top: 6px;
     width: 64px;
