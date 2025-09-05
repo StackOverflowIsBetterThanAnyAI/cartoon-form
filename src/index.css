@@ -71,6 +71,20 @@ input:not([type="submit"]):hover {
     width: 192px;
 }
 
+.cartoon::before {
+    background-color: #4b4848;
+    border-radius: 50%;
+    content: "";
+    filter: blur(4px);
+    height: 160px;
+    left: 50%;
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    translate: -50% -50%;
+    width: 160px;
+}
+
 .cartoon-wrapper {
     border-radius: 0 0 50% 50%;
     height: 192px;
@@ -103,7 +117,6 @@ input:not([type="submit"]):hover {
     height: 64px;
     left: 4px;
     opacity: 0.7;
-    outline: 2px solid #4b48489a;
     position: absolute;
     top: 6px;
     width: 64px;
@@ -244,14 +257,14 @@ input:not([type="submit"]):hover {
     width: 144px;
 }
 
-.mouth-white-middle {
+.mouth-white-center {
     height: 40px;
     top: 72px;
     width: 64px;
     z-index: 5;
 }
 
-.mouth-white-middle::before {
+.mouth-white-center::before {
     background-color: #69686850;
     border-radius: 50%;
     content: "";
@@ -263,9 +276,15 @@ input:not([type="submit"]):hover {
     width: 56px;
 }
 
+.mouth-white-middle {
+    height: 20px;
+    top: 78px;
+    width: 152px;
+}
+
 .mouth-white-top {
-    height: 60px;
-    top: 52px;
+    height: 24px;
+    top: 68px;
     width: 156px;
 }
 
