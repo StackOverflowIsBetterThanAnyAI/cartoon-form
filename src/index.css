@@ -381,7 +381,7 @@ input:not([type="submit"]):hover {
 
 @keyframes head-movement {
     0% {
-        transform: translateX(-8px) rotate(-8deg);
+        transform: translateX(-6px) rotate(-6deg);
     }
     50% {
         transform: translateX(6px) rotate(8deg);
