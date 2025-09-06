@@ -191,6 +191,7 @@ input:focus-visible {
 }
 
 .eye::after {
+    animation: eye-movement 2s ease-in-out infinite alternate;
     content: "";
     position: absolute;
     top: 6px;
@@ -425,6 +426,18 @@ input:focus-visible {
 
 .snout-hair-right {
     right: 54px;
+}
+
+@keyframes eye-movement {
+    0% {
+        transform: translateX(-3px);
+    }
+    50% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(-2px);
+    }
 }
 
 @keyframes head-movement {
