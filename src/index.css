@@ -7,7 +7,11 @@
 }
 
 @media only screen and (min-width: 1024px) {
-    input,
+    input {
+        font-size: 1rem;
+    }
+
+    input[type="submit"],
     label {
         font-size: 1.25rem;
     }
@@ -19,7 +23,11 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    input,
+    input {
+        font-size: 0.875rem;
+    }
+
+    input[type="submit"],
     label {
         font-size: 1.15rem;
     }
@@ -31,7 +39,11 @@
 }
 
 @media only screen and (max-width: 484px) {
-    input,
+    input {
+        font-size: 0.75rem;
+    }
+
+    input[type="submit"],
     label {
         font-size: 1rem;
     }
@@ -72,7 +84,7 @@ input[type="submit"]:active {
 input:not([type="submit"]) {
     background-color: #faf6f4;
     border-radius: 0.25rem;
-    padding: 0.5rem 0.25rem;
+    padding: 0.5rem;
 }
 
 input:not([type="submit"]):hover {
