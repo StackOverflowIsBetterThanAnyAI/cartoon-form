@@ -12,6 +12,10 @@ fieldset {
     gap: 1rem;
 }
 
+html {
+    background-color: #e4dddd;
+}
+
 input[type="submit"] {
     background-color: #f3a444ff;
     border-radius: 0.5rem;
@@ -186,6 +190,7 @@ input:not([type="submit"]):hover {
     content: "";
     background-color: #807c7c;
     border-radius: 50% 50% 25% 25%;
+    box-shadow: 0px 0px 8px inset #4b4848;
     height: 108px;
     margin: auto;
     position: absolute;
@@ -279,9 +284,11 @@ input:not([type="submit"]):hover {
 }
 
 .mouth-white-bottom {
+    box-shadow: 0px 0px 8px inset #69686850;
     height: 64px;
     top: 60px;
     width: 144px;
+    z-index: 1;
 }
 
 .mouth-white-center {
@@ -294,6 +301,7 @@ input:not([type="submit"]):hover {
 .mouth-white-center::before {
     background-color: #69686850;
     border-radius: 50%;
+    box-shadow: 0px 0px 8px inset #4b484850;
     content: "";
     height: 32px;
     left: 50%;
@@ -307,12 +315,14 @@ input:not([type="submit"]):hover {
     height: 20px;
     top: 78px;
     width: 152px;
+    z-index: 2;
 }
 
 .mouth-white-top {
     height: 24px;
     top: 68px;
     width: 156px;
+    z-index: 2;
 }
 
 .right-cheek {
