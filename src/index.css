@@ -11,7 +11,7 @@
         font-size: 1rem;
     }
 
-    input[type="submit"],
+    input[type='submit'],
     label {
         font-size: 1.25rem;
     }
@@ -27,7 +27,7 @@
         font-size: 0.875rem;
     }
 
-    input[type="submit"],
+    input[type='submit'],
     label {
         font-size: 1.15rem;
     }
@@ -43,7 +43,7 @@
         font-size: 0.75rem;
     }
 
-    input[type="submit"],
+    input[type='submit'],
     label {
         font-size: 1rem;
     }
@@ -64,7 +64,7 @@ html {
     background-color: #e4dddd;
 }
 
-input[type="submit"] {
+input[type='submit'] {
     background-color: #f3a444ff;
     border-radius: 0.5rem;
     margin-top: 1rem;
@@ -72,27 +72,39 @@ input[type="submit"] {
     padding: 0.25rem;
 }
 
-input[type="submit"]:hover {
+input[type='submit']:hover {
     background-color: #eb9a39;
     cursor: pointer;
 }
 
-input[type="submit"]:active {
+input[type='submit']:active {
     background-color: #d18629;
 }
 
-input:not([type="submit"]) {
+input:not([type='submit']) {
     background-color: #faf6f4;
     border-radius: 0.25rem;
     padding: 0.5rem;
 }
 
-input:not([type="submit"]):hover {
+input:not([type='submit']):hover {
     background-color: #f3edea;
 }
 
 input:focus-visible {
     outline: 2px solid #141414;
+}
+
+.back-body {
+    background-color: #696868;
+    border-radius: 100% / 125% 125% 80% 80%;
+    box-shadow: 0px 0px 16px inset #807c7c;
+    height: 96px;
+    left: 50%;
+    position: absolute;
+    translate: -50%;
+    width: 96px;
+    z-index: 0;
 }
 
 .body {
@@ -103,10 +115,11 @@ input:focus-visible {
     position: absolute;
     translate: -50%;
     width: 96px;
+    z-index: 1;
 }
 
 .body::before {
-    content: "";
+    content: '';
     background-color: #696868;
     border-radius: 50%;
     height: 72px;
@@ -130,15 +143,15 @@ input:focus-visible {
 .cartoon::before {
     background-color: #4b4848;
     border-radius: 50%;
-    content: "";
+    content: '';
     filter: blur(4px);
-    height: 160px;
+    height: 168px;
     left: 50%;
     opacity: 0.5;
     position: absolute;
     top: 50%;
     translate: -50% -50%;
-    width: 160px;
+    width: 168px;
 }
 
 .cartoon-wrapper {
@@ -170,7 +183,7 @@ input:focus-visible {
 .ear::after {
     background-color: #f7a1f7;
     border-radius: 20%;
-    content: "";
+    content: '';
     height: 64px;
     left: 4px;
     opacity: 0.7;
@@ -181,7 +194,7 @@ input:focus-visible {
 
 .ear::before {
     background: #faf8f8;
-    content: "";
+    content: '';
     filter: blur(2px);
     height: 64px;
     left: 4px;
@@ -204,7 +217,7 @@ input:focus-visible {
 
 .eye::after {
     animation: eye-movement 2s ease-in-out infinite alternate;
-    content: "";
+    content: '';
     position: absolute;
     top: 6px;
     left: 5px;
@@ -217,7 +230,7 @@ input:focus-visible {
 .eye::before {
     background: #faf8f8;
     border-radius: 50%;
-    content: "";
+    content: '';
     filter: blur(2px);
     height: 36px;
     opacity: 0.25;
@@ -240,7 +253,7 @@ input:focus-visible {
 }
 
 .face::before {
-    content: "";
+    content: '';
     background-color: #807c7c;
     border-radius: 50% 50% 25% 25%;
     box-shadow: 0px 0px 8px inset #4b4848;
@@ -266,6 +279,19 @@ input:focus-visible {
     gap: 1rem;
     max-width: 448px;
     padding: 1rem;
+}
+
+.left-back-ear {
+    background-color: #696868;
+    border-radius: 20%;
+    height: 72px;
+    left: -8px;
+    position: absolute;
+    rotate: 15deg;
+    top: 0px;
+    transform: skew(20deg);
+    width: 72px;
+    z-index: -1;
 }
 
 .left-cheek {
@@ -353,7 +379,7 @@ input:focus-visible {
     background-color: #69686850;
     border-radius: 50%;
     box-shadow: 0px 0px 8px inset #4b484850;
-    content: "";
+    content: '';
     height: 32px;
     left: 50%;
     position: absolute;
@@ -374,6 +400,19 @@ input:focus-visible {
     top: 68px;
     width: 156px;
     z-index: 2;
+}
+
+.right-back-ear {
+    background-color: #696868;
+    border-radius: 20%;
+    height: 72px;
+    right: -4px;
+    position: absolute;
+    rotate: 95deg;
+    top: 2px;
+    transform: skew(30deg);
+    width: 72px;
+    z-index: -1;
 }
 
 .right-cheek {
@@ -408,7 +447,7 @@ input:focus-visible {
 .snout::before {
     background-color: #f3edea;
     border-radius: 50%;
-    content: "";
+    content: '';
     filter: blur(0.5px);
     height: 4px;
     left: 50%;
