@@ -139,6 +139,7 @@ input:not([type="submit"]):hover {
     background-color: #17359e;
     border-radius: 50%;
     height: 36px;
+    overflow: hidden;
     position: absolute;
     top: 36px;
     width: 24px;
@@ -226,6 +227,16 @@ input:not([type="submit"]):hover {
 
 .left-eye {
     left: 18px;
+}
+
+.lid {
+    animation: lid-movement 4s ease infinite alternate;
+    background-color: #696868;
+    height: 36px;
+    outline: 2px solid #4b484880;
+    position: absolute;
+    width: 24px;
+    z-index: 5;
 }
 
 .middle-cheek {
@@ -377,5 +388,17 @@ input:not([type="submit"]):hover {
     }
     100% {
         transform: translateX(-8px) rotate(-6deg);
+    }
+}
+
+@keyframes lid-movement {
+    0% {
+        transform: translateY(0px);
+    }
+    20% {
+        transform: translateY(-40px);
+    }
+    100% {
+        transform: translateY(-40px);
     }
 }
