@@ -48,3 +48,8 @@ document.addEventListener('keydown', (e) => {
         }
     }
 })
+
+const submit = document.getElementById('submit')
+submit.addEventListener('submit', (e) => {
+    e.preventDefault()
+})
